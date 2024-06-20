@@ -15,8 +15,8 @@
 
 
 <div class="oauth2" id="login">
-      <button class="login__button" id="oauth2__logout" role="button" v-if="loggedIn"></button>
-      <button class="login__button" id="oauth2__login" v-else> {{message}} </button>
+      <button class="login__button" id="oauth2__logout" role="button" v-show="loggedIn"></button>
+      <button class="login__button" id="oauth2__login" role="button" v-show="!loggedIn"> {{message}} </button>
     </div>
 
     <script>
@@ -24,7 +24,8 @@
       const app = Vue.createApp({
         data() {
           return {
-            message: "Hello World!"
+            message: "Hello World!",
+            loggedIn: false
           }
         }
       })

@@ -152,7 +152,11 @@ li a {
 
   position: absolute;
   top: 4vh;
-  right: 8vw
+  right: 8vw;
+}
+
+.oauth2 {
+  height: 6rem;
 }
 
 .header {
