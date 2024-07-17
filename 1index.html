@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="./index.js"></script>
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <title class="CHOAM">C.H.O.A.M</title>
+</head>
+
+
+<div class="oauth2" id="login">
+      <button class="login__button" id="oauth2__logout" role="button" v-if="loggedIn"></button>
+      <button class="login__button" id="oauth2__login" v-else> {{message}} </button>
+    </div>
+
+    <script>
+
+      const app = Vue.createApp({
+        data() {
+          return {
+            message: "Hello World!"
+          }
+        }
+      })
+
+      app.mount('#login')
+
+    </script>
+
+
+<body>
+  <div class="container">
+    <div class="textbox fade-up">
+      <div class="header">
+        <span class="header__top">
+          welcome to
+        </span>
+        <br>
+        <span class="CHOAM header__bottom">
+          C.H.O.A.M
+        </span>
+      </div>
+      <div class="home__links fade-up" id="nav">
+        <a href="index.html" class="home__link" id="home">
+          <i class="fa fa-solid fa-house-user"></i>
+        </a>
+        <a href="Map.html" class="home__link" id="map">
+          <i class="fa fa-solid fa-map"></i>
+        </a>
+        <a href="jobs.html" class="home__link" id="jobs">
+          <i class="fa fa-solid fa-clipboard"></i>
+        </a>
+        <!--this bot page is for management-->
+        <a href="" class="home__link" id="bot">
+          <i class="fa fa-solid fa-robot"></i>
+        </a>
+        <a href="" class="home__link" id="guild">
+          <i class="fa fa-solid fa-server"></i>
+        </a>
+      </div>
+    </div>
+    <div class="credits notice">
+      <div class="notice__header">
+        <h2 class="notice__header--title">
+          Credits!
+        </h2>
+      </div>
+      <div class="credits__list">
+
+        <!--DUPLICATE STARTING HERE-->
+
+        <div class="credit__mention">
+          <div class="user__photo user">
+            <figure class="user__photo--mask">
+              <img
+                src="https://cdn.discordapp.com/avatars/1013147665325883463/ec1e16c4f50baaf8e91db0fe77d5a0da.png?size=1024&format=webp&quality=lossless&width=0&height=384"
+                class="profile-image">
+            </figure>
+          </div>
+          <div class="user__info">
+            <div class="user__info--row">
+              <div class="user__name--info">
+                <div class="user__nickname user name__span spice-purple">Malamania</div>
+                <div class="user__name user nick__span spice-purple">animateobject_</div>
+              </div>
+              <div class="user__job user spice-purple white-text">Project Manager</div>
+            </div>
+          </div>
+        </div>
+
+        <!--DUPLICATE ENDING HERE-->
+        <!--DUPLICATES GO IN HERE-->
+
+        <div class="credit__mention">
+          <div class="user__photo user">
+            <figure class="user__photo--mask">
+              <img
+                src="https://cdn.discordapp.com/avatars/720847074131968000/4c0419b8f714c09432e1ddfff19c6cd0.webp?size=1024&format=webp&width=0&height=256"
+                class="profile-image">
+            </figure>
+          </div>
+          <div class="user__info">
+            <div class="user__info--row">
+              <div class="user__name--info">
+                <div class="user__nickname user name__span spice-purple">TehNizZ</div>
+                <div class="user__name user nick__span spice-purple">nizzim.</div>
+              </div>
+              <div class="user__job user spice-purple white-text">UI Design</div>
+            </div>
+          </div>
+        </div>
+        <div class="credit__mention">
+          <div class="user__photo user">
+            <figure class="user__photo--mask">
+              <img
+                src="https://cdn.discordapp.com/avatars/164647838704205825/6ade09e8a47378b353ce57e22da1ca70.png?size=4096"
+                class="profile-image">
+            </figure>
+          </div>
+          <div class="user__info">
+            <div class="user__info--row">
+              <div class="user__name--info">
+                <div class="user__nickname user name__span spice-purple">niql</div>
+                <div class="user__name user nick__span spice-purple">niqlll</div>
+              </div>
+              <div class="user__job user spice-purple white-text">UI Design</div>
+            </div>
+          </div>
+        </div>
+        <div class="credit__mention">
+          <div class="user__photo user">
+            <figure class="user__photo--mask">
+              <img
+                src="https://cdn.discordapp.com/avatars/209728362703355916/a_1438fe08c768ff2513a4bb6e61521e8b.gif?size=4096"
+                class="profile-image">
+            </figure>
+          </div>
+          <div class="user__info">
+            <div class="user__info--row">
+              <div class="user__name--info">
+                <div class="user__nickname user name__span spice-purple">shib</div>
+                <div class="user__name user nick__span spice-purple">shibioto</div>
+              </div>
+              <div class="user__job user spice-purple white-text">Development</div>
+            </div>
+          </div>
+        </div>
+
+        <!--DUPLICATES GO IN HERE-->
+      </div>
+    </div>
+    <div class="bugs notice">
+      <div class="notice__header">
+        <h2 class="notice__header--title">
+          Notice a bug?
+        </h2>
+      </div>
+      <div class="bugs__content">
+        <div class="discord-invite">
+          <p class="discord-invite__text">
+            Feel free to join our
+            <a href="https://discord.gg/k9PP8yEEMf" target="_blank" class="spice-purple">
+              &nbsp;Discord&nbsp;
+            </a>
+            support server to make bug reports and feature requests!
+          </p>
+        </div>
+        <br>
+        <div class="github-invite">
+          <p class="github-invite__text">
+            Alternatively, you may go to our
+            <a href="https://github.com/CHOAM-SaaS" target="_blank" class="spice-purple">
+              &nbsp;Github&nbsp;
+            </a>
+            repository to make an issue!
+          </p>
+        </div>
+      </div>
+      <div class="home__links bug__links">
+        <a href="https://discord.gg/k9PP8yEEMf" target="_blank" class="home__link" id="discord">
+          <i class="fab fa-brands fa-discord"></i>
+        </a>
+        <a href="https://github.com/CHOAM-SaaS" target="_blank" class="home__link" id="github">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="row footer_row">
+      <a href="#" class="footer__anchor">
+        <figure class="footer__logo">
+          <img src="./assets/" class="footer__logo--img">
+        </figure>
+      </a>
+      <div class="footer__copyright">Copyright © 2024 <span class="footer__copyright spice-purple">House Erebus</span>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
