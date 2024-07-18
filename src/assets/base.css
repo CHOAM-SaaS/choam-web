@@ -3,19 +3,53 @@
 @tailwind utilities;
 
 .button-main {
-
+  @apply flex justify-center items-center gap-1 text-sm font-medium text-slate-400 bg-slate-800 py-2 px-3 rounded-md hover:bg-sky-600 hover:text-slate-100 duration-200
 }
 
 .button-accent {
-
+  @apply w-full flex justify-center items-center gap-1 text-sm font-medium text-slate-100 bg-sky-600 py-2 px-3 rounded-md hover:bg-sky-700 hover:text-slate-100 duration-200
 }
 
 .button-danger {
-
+  @apply w-full flex justify-center items-center gap-1 text-sm font-medium text-slate-100 bg-rose-600 py-2 px-3 rounded-md hover:bg-rose-700 hover:text-slate-100 duration-200
 }
 
 .input-main {
-
+  @apply block w-full rounded-md px-3 border-0 bg-white/5 py-1.5 text-white shadow-sm ring-1 ring-inset ring-slate-700 outline-none sm:text-sm sm:leading-6
 }
 
 /* ANIMS */
+.scale-in-bottom {
+	-webkit-animation: scale-in-bottom 0.2s ease-in-out both;
+	        animation: scale-in-bottom 0.2s ease-in-out both;
+}
+
+@-webkit-keyframes scale-in-bottom {
+  0% {
+    -webkit-transform: scale(0) translateX(-50%) translateY(-25%);
+            transform: scale(0) translateX(-50%) translateY(-25%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1) translateX(-50%) translateY(-125%);
+            transform: scale(1) translateX(-50%) translateY(-125%);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-bottom {
+  0% {
+    -webkit-transform: scale(0) translateX(-50%) translateY(-100%);
+            transform: scale(0) translateX(-50%) translateY(-100%);
+    opacity: 0;
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+  }
+  100% {
+    -webkit-transform: scale(1) translateX(-50%) translateY(-125%);
+            transform: scale(1) translateX(-50%) translateY(-125%);
+
+            -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    opacity: 1;
+  }
+}
