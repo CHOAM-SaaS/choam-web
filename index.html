@@ -1,14 +1,34 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full bg-slate-900">
+<html lang="en" class="h-full">
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/choam flag circle.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/choam flag circle.ico">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
     <title>CHOAM Home</title>
 </head>
 
-<body class="h-full text-slate-300">
+<body class="h-full">
+
+    <section class="items-center content-center flex-auto w-screen bg-grey columns-1 h-3/5 min-w-min">
+        <div class="flex items-center content-center mt-16 columns-1 header__welcome fade-up border-brown-bg">
+            <div class="flex flex-wrap items-center content-center w-3/5 pt-2 m-auto columns-1 max-h-128 min-w-min min-h-min">
+                <span class="items-center self-center p-6 m-auto text-4xl text-white font-center font-segoe">
+                    welcome to
+                </span>
+                <br>
+                <span class="items-center self-center p-6 m-auto text-yellow text-8xl font-tommy">C.H.O.A.M.</span>
+            </div>
+            <div id="navbar"></div>
+        </div>
+    </section>
+
+
+
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
 </body>

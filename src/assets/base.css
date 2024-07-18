@@ -2,20 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .button-main {
-  @apply flex justify-center items-center gap-1 text-sm font-medium text-slate-400 bg-slate-800 py-2 px-3 rounded-md hover:bg-sky-600 hover:text-slate-100 duration-200
+  @apply flex items-center justify-center gap-1 px-3 py-2 text-sm font-medium text-black duration-200 rounded-md;
 }
 
 .button-accent {
-  @apply w-full flex justify-center items-center gap-1 text-sm font-medium text-slate-100 bg-sky-600 py-2 px-3 rounded-md hover:bg-sky-700 hover:text-slate-100 duration-200
+  @apply flex items-center justify-center w-full gap-1 px-3 py-2 text-sm font-medium text-black duration-200 rounded-md;
 }
 
 .button-danger {
-  @apply w-full flex justify-center items-center gap-1 text-sm font-medium text-slate-100 bg-rose-600 py-2 px-3 rounded-md hover:bg-rose-700 hover:text-slate-100 duration-200
+  @apply flex items-center justify-center w-full gap-1 px-3 py-2 text-sm font-medium text-black duration-200 rounded-md;
 }
 
 .input-main {
-  @apply block w-full rounded-md px-3 border-0 bg-white/5 py-1.5 text-white shadow-sm ring-1 ring-inset ring-slate-700 outline-none sm:text-sm sm:leading-6
+  @apply block w-full rounded-md px-3 border-0 bg-white/5 py-1.5 text-black shadow-sm ring-1 ring-inset outline-none sm:text-sm sm:leading-6;
+}
+
+@layer components {
+  .text-black {
+    color: black;
+  }
+  .bg-grey {
+    background-color: #40322d;
+  }
+  .bg-orange {
+    background-color: #79401eed;
+  }
+
 }
 
 /* ANIMS */
@@ -51,5 +68,16 @@
             -webkit-transform-origin: 0% 50%;
             transform-origin: 0% 50%;
     opacity: 1;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
