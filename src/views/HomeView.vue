@@ -2,7 +2,7 @@
   <div class="min-h-full">
     <div class="py-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <header class="mb-4">
-        <div class="">
+        <div>
           <h1 class="text-3xl font-bold leading-tight tracking-tight text-slate-300">Count</h1>
         </div>
       </header>
